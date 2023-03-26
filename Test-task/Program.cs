@@ -8,7 +8,7 @@ using static System.Console;
 
 Clear();
 
-string[] firstArray = { "hello", "2", "word", ":-)", "123", "156", "computer scence", "Russia", "Denmark", "Kaz" };
+string[] firstArray = { "hello", "2", "word", ":-)", "123", "156", "computer scence", "Russia", "Denmark", "Mar", "sdsdsd", "-0-" };
 
 string str = string.Empty;
 
