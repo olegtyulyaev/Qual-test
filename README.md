@@ -18,6 +18,31 @@
 ["1234", "1567", "-2", "computer science"] -> ["-2"]
 ["Russia", "Denmark", "Kazan", ""] -> []
 
-## Алгоритм рещения
+## Алгоритм решения
 
 ![блок-схема_для_задачи](diagram-task.png) 
+
+## Код программы
+
+using System;
+using static System.Console;
+
+Clear();
+string[] firstArray = { "hello", "2", "word", ":-)", "123", "156", "computer scence", "Russia", "Denmark", "Kaz" };
+string str = string.Empty;
+
+
+for (int i = 0; i < firstArray.Length - 1; i++)
+{
+    if (firstArray[i].Length <= 3) str = str + firstArray[i] + ",";
+}
+if (firstArray[firstArray.Length - 1].Length <= 3) str = str + firstArray[firstArray.Length - 1];
+
+string[] secondArr = str.Split(",");
+
+Console.Write("[");
+for (int i = 0; i < secondArr.Length - 1; i++)
+{
+    Console.Write(secondArr[i] + ", ");
+}
+Console.WriteLine(secondArr[secondArr.Length - 1] + "]");
